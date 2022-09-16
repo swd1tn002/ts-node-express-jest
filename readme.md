@@ -1,16 +1,41 @@
 # ts-node-express-jest
 
+[![Docker Image CI](https://github.com/swd1tn002/ts-node-express-jest/actions/workflows/docker-image.yml/badge.svg)](https://github.com/swd1tn002/ts-node-express-jest/actions/workflows/docker-image.yml) [![Node.js CI](https://github.com/swd1tn002/ts-node-express-jest/actions/workflows/node.js.yml/badge.svg)](https://github.com/swd1tn002/ts-node-express-jest/actions/workflows/node.js.yml)
+
+
+## Examples
+
+### Running locally
+
 ```sh
 $ npm install
-$ npm start
+$ npm run dev
 ```
 
 Visit http://localhost:3000.
 
 
-## Examples
+### Testing locally
 
-### Postal district name by postal code:
+```sh
+$ npm test
+```
+
+### Running in container
+
+```sh
+$ docker build . --file Dockerfile --tag ts-node-express-jest:latest
+$ docker run -it --rm -p 3000:3000 ts-node-express-jest:latest
+```
+
+### Testing the container
+
+```sh
+$ docker run -it --rm -p 3000:3000 ts-node-express-jest:latest --exec npm test
+```
+
+
+### Postal district name by postal code
 
 ```
 curl http://localhost:3000/postalcodes?number=99999
@@ -23,7 +48,7 @@ curl http://localhost:3000/postalcodes?number=99999
 }
 ```
 
-### Postal codes by postal district name:
+### Postal codes by postal district name
 
 ```
 curl http://localhost:3000/postalcodes/porvoo/
