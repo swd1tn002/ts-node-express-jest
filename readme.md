@@ -12,8 +12,11 @@ $ npm install
 $ npm run dev
 ```
 
-Visit http://localhost:3000.
+Try it:
 
+* http://localhost:3000
+* http://localhost:3000/postalcodes?number=99999
+* http://localhost:3000/postalcodes/porvoo/
 
 ### Testing locally
 
