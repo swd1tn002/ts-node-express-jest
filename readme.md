@@ -1,6 +1,12 @@
-# ts-node-express-jest
+# TypeScript, Node, Express and Jest demo project
 
 [![Docker Image CI](https://github.com/swd1tn002/ts-node-express-jest/actions/workflows/docker-image.yml/badge.svg)](https://github.com/swd1tn002/ts-node-express-jest/actions/workflows/docker-image.yml) [![Node.js CI](https://github.com/swd1tn002/ts-node-express-jest/actions/workflows/node.js.yml/badge.svg)](https://github.com/swd1tn002/ts-node-express-jest/actions/workflows/node.js.yml)
+
+This project is an experiment in setting up a project in the tech stack and using GitHub actions as CI with it.
+
+Dockerfile can be found [here](./Dockerfile) and the corresponding workflow file at [docker-image.yml](./.github/workflows/docker-image.yml).
+
+Tests can be found in the [src/test](./src/test/) folder and they are run with workflow file [node.js.yml](./.github/workflows/node.js.yml).
 
 
 ## Examples
