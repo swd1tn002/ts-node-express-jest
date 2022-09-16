@@ -4,7 +4,8 @@
   "description": "Experimenting TypeScript, Node, Express and Jest",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./src/index.ts",
+    "start": "node ./bin/index.js",
+    "build": "tsc",
     "test": "jest",
     "dev": "ts-node ./src/index.ts"
   },
