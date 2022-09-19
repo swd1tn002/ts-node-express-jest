@@ -2,12 +2,12 @@
   "name": "ts-node-express-jest",
   "version": "1.0.0",
   "description": "Experimenting TypeScript, Node, Express and Jest",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node ./bin/index.js",
+    "start": "node ./bin/server.js",
     "build": "tsc",
     "test": "NODE_ENV=test jest",
-    "dev": "ts-node ./src/index.ts",
+    "dev": "ts-node ./src/server.ts",
     "migrate": "sequelize-cli db:migrate",
     "seed": "sequelize-cli db:seed:all"
   },
