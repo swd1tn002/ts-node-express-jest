@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ts-node-express-jest:latest
     - name: Run tests in container
-      run: docker run -i --rm ts-node-express-jest:latest npm test
+      run: docker run -i --rm ts-node-express-jest:latest NODE_ENV=test npm run migrate && npm test
