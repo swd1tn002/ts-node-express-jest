@@ -2,8 +2,6 @@ import { PostalCode } from '../../models/postalcode';
 import { test, describe, beforeEach, afterEach } from '@jest/globals';
 import { strict as assert } from 'assert';
 
-PostalCode.findAll().then(l => l.forEach(c => console.log(c.name)))
-
 describe('PostalCode data model', () => {
 
     beforeEach(async () => {
