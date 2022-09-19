@@ -16,5 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag ts-node-express-jest:latest
-    - name: Run tests in container
-      run: docker run -i --rm ts-node-express-jest:latest NODE_ENV=test npm run migrate && npm test
+    - name: Run migrations to set up test db
+      run: docker run -i --env NODE_ENV=test ts-node-express-jest:latest npm run migrate
+    - name: Run tests
+      run: docker run -i --env NODE_ENV=test ts-node-express-jest:latest npm test
