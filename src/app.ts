@@ -1,11 +1,7 @@
 import express from 'express';
-import { Client } from './Client';
 import { PostalCode } from './models/postalcode';
 
-
-const PORT = process.env.PORT || 3000;
 const app = express();
-const client = new Client();
 
 app.get('/postalcodes', async function (req, res) {
     let postalCode: string = req.query.number?.toString() ?? '';
