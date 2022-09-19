@@ -2,7 +2,7 @@ import request from 'supertest';
 import { test, describe } from '@jest/globals';
 import { strict as assert } from 'assert';
 
-import app from '../app';
+import app from '../../app';
 
 describe('finding postal codes by giving a postal district name', () => {
 
