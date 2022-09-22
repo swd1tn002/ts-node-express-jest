@@ -11,10 +11,10 @@ Tech        | Role                | Location
 ------------|---------------------|---
 TypeScript  | General language    | [src/](./src)
 Express     | HTTP library        | [app.ts](./src/app.ts)
-Sequelize   | ORB library and migrations | [Models](./src/models/), [Migrations](./db/migrations/), [seeders](./db/seeders/)
+Sequelize   | ORB library and migrations | [Models](./src/models/), [Migrations](./db/migrations/), [Seeders](./db/seeders/)
 Jest        | Automated tests     | [src/test](./src/test/)
 GitHub actions | Continuous integration | [Tests](./.github/workflows/node.js.yml), [Docker build](./.github/workflows/docker-image.yml)
-Docker      | Container image file | [Dockerfile](./Dockerfile,)
+Docker      | Container image file | [Dockerfile](./Dockerfile)
 
 
 ## Examples
