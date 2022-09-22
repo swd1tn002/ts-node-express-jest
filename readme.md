@@ -100,7 +100,7 @@ $ curl http://localhost:3000/postalcodes?number=99999
 ### Get the postal codes for a given postal district name
 
 ```sh
-curl http://localhost:3000/postalcodes/porvoo/
+$ curl http://localhost:3000/postalcodes/porvoo/
 ```
 
 ```json
